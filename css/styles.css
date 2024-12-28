@@ -1,0 +1,136 @@
+/* VARIABLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-primary: #43a337;
+    --color-background: #21511b;
+}
+
+/* GLOBALS */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > * { width: 100%; }
+
+.div-cover-container, .div-footer {
+    background-color: var(--color-background);
+}
+
+.div {
+    padding: 40px 0px;
+}
+
+.button-book {
+    height: fit-content;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 5px;
+    
+    background-color: var(--color-primary);
+    color: white;
+    border: 0;   
+}
+
+.italic {
+    font-style: italic;
+}
+
+.header {
+    color: var(--color-background);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* COVER IMAGE */
+
+.div-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+}
+
+.div-cover-text {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.div-cover-text-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+.div-cover-text p {
+    max-width: 30ch;
+    font-size: clamp(20px, 1.4vw, 26px);
+    color: white;
+}
+
+.div-cover-text img {
+    width: 20vw;
+}
+
+.div-cover-image img {
+    width: 30vw;
+}
+
+/* BLURB */
+
+.div-blurb-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+
+.div-blurb-container img {
+    width: 300px;
+}
+
+.div-blurb-container p {
+    max-width: 50ch;
+    line-height: 1.5;
+}
+
+.div-blurb-container p + p {
+    margin-top: 20px;
+}
+
+/* BODY AREAS */
+
+.div-body-areas-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.div-body-areas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: end;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.div-body-areas-container p + p {
+    margin-top: 20px;
+}
